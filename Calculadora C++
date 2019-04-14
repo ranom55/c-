@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    system("color 50");
+    float var1;
+    float var2;
+    int var3;
+    int resto;
+    int continuar = 1;
+    while (continuar == 1) {
+    cout << "O que voce deseja \nmultiplicacao-1\nsoma-2\ndivisao-3\nsubtracao-4 " << endl;
+    cin >> var3;
+    if (var3 == 1) {
+        cout << "Numero que sera multiplicado: ";
+        cin >> var1;
+        cout << "Multiplicador: ";
+        cin >> var2;
+        cout << "Produto: " << var1 * var2 << endl;
+    }
+    if (var3 == 2) {
+        cout << "Numero que sera somado: ";
+        cin >> var1;
+        cout << "Somador: ";
+        cin >> var2;
+        cout << "Resultado: " << var1 + var2 << endl;
+    }
+    if (var3 == 3) {
+        cout << "Numero que sera dividido: ";
+        cin >> var1;
+        cout << "Divisor: ";
+        cin >> var2;
+        cout << "Quociente: " << var1 / var2 << endl;
+        cout << "Deseja saber o resto?\nSim-1\nNao-2" << endl;
+        cin >> resto;
+        if (resto == 1) {
+
+            cout << "O resto e: " << int(var1) % int(var2) << endl;
+        }
+    }
+
+    if (var3 == 4) {
+        cout << "Numero que sera subtraido: ";
+        cin >> var1;
+        cout << "Quem ira subtrair: ";
+        cin >> var2;
+        cout << "Diferenca: " << var1 - var2 << endl;
+        }
+        cout << "Deseja continuar?\nSim-1\nNao-2" << endl;
+        cin >> continuar;
+    }
+     return 0;
+
+
+}
